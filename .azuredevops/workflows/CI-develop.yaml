@@ -1,0 +1,27 @@
+# Build a Docker image
+# https://docs.microsoft.com/azure/devops/pipelines/languages/docker
+
+trigger:
+  - develop
+
+pool:
+  vmImage: "ubuntu-latest"
+
+pr: none
+
+resources:
+  - repo: self
+
+jobs:
+  - job: push_acr_for_Dev
+    variables:
+      - group: ACR_Valiables_For_Dev
+      - name: imageName
+        value: giikusaidevopsdemo:$(date +%Y%m%d)-$(Build.BuildId)-$(Build.SourceBranchName)
+
+    steps:
+      - script: |
+          docker build -t $(acrServer)/$(imageName) .
+          docker login -u $(acrId) -p $(acrPassword) $(acrServer)
+          docker push $(acrServer)/$(imageName)
+        displayName: Build and Push Docker image
