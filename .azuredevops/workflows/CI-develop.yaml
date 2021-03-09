@@ -17,7 +17,7 @@ jobs:
     variables:
       - group: ACR_Valiables_For_Dev
       - name: imageName
-        value: giikusaidevopsdemo:$(date +%Y%m%d)-$(Build.BuildId)-$(Build.SourceBranchName)
+        value: giikusaidevopsdemo:latest
 
     steps:
       - script: |
