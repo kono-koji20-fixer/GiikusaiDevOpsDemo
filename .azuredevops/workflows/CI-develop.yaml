@@ -16,12 +16,12 @@ jobs:
   - job: push_acr_for_Dev
     variables:
       - group: ACR_Valiables_For_Dev
-      - name: imageName
+      - name: IMAGE_NAME
         value: giikusaidevopsdemo:$(date +%Y%m%d)-$(Build.BuildId)-$(Build.SourceBranchName)
 
     steps:
       - script: |
-          docker build -t $(acrServer)/$(imageName) .
-          docker login -u $(acrId) -p $(acrPassword) $(acrServer)
-          docker push $(acrServer)/$(imageName)
+          docker build -t $(SERVER)/$(IMAGE_NAME) .
+          docker login -u $(ID) -p $(PASSWORD) $(SERVER)
+          docker push $(SERVER)/$(IMAGE_NAME)
         displayName: Build and Push Docker image
