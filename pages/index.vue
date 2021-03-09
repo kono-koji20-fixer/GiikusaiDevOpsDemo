@@ -1,10 +1,14 @@
 <template>
   <div>
-    <h1>開発サイクルを爆速にする！</h1>
-    <h2>~ Azure DevOpsでアプリのビルド・デプロイを自動化 ~</h2>
-    <p>株式会社FIXER</p>
-    <p>Cloud Solution Engineer</p>
-    <p>河野 光司 Koji Kono</p>
+    <v-card>
+      <v-card-title>
+        開発サイクルを爆速にする！ ~ Azure
+        DevOpsでアプリのビルド・デプロイを自動化 ~
+      </v-card-title>
+      <v-card-text>株式会社FIXER</v-card-text>
+      <v-card-text>河野光司 Koji Kono</v-card-text>
+      <v-card-text>Cloud Solution Engineer</v-card-text>
+    </v-card>
   </div>
 </template>
 
