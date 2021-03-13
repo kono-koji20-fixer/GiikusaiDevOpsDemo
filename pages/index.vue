@@ -17,6 +17,14 @@
       <v-card-text>冨本優介 Yusuke Tomimoto</v-card-text>
       <v-card-text>Cloud Solution Engineer</v-card-text>
     </v-card>
+    <v-card>
+      <v-card-title>
+        k8sコトハジメ！AzureでサクッとKubernetesを始めてみよう
+      </v-card-title>
+      <v-card-text>株式会社FIXER</v-card-text>
+      <v-card-text>冨本優介 Yusuke Tomimoto</v-card-text>
+      <v-card-text>Cloud Solution Engineer</v-card-text>
+    </v-card>
   </div>
 </template>
 
