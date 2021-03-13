@@ -19,7 +19,7 @@
     </v-card>
     <v-card>
       <v-card-title>
-        k8sコトハジメ！AzureでサクッとKubernetesを始めてみよう
+        株式会社フィクサーです！！！！！！！！技育祭はGeekSai！！！
       </v-card-title>
       <v-card-text>株式会社FIXER</v-card-text>
       <v-card-text>冨本優介 Yusuke Tomimoto</v-card-text>
